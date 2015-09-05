@@ -1,21 +1,4 @@
-# Solution
-# [Stage, Position]: Cost
-# [0, 0]: 75
-# [1, 1]: 64
-# [2, 2]: 82
-# [3, 2]: 87
-# [4, 2]: 82
-# [5, 3]: 75
-# [6, 3]: 73
-# [7, 3]: 28
-# [8, 4]: 83
-# [9, 5]: 32
-# [10, 6]: 91
-# [11, 7]: 78
-# [12, 8]: 58
-# [13, 8]: 73
-# [14, 9]: 93
-# Total Cost for Optimal Path: 1074
+# This depends on the GNU Linear Programming Kit. I've given instructions on how to download, configure, and build the native extensions below.
 
 # Setup
 # wget http://ftp.gnu.org/gnu/glpk/glpk-4.44.tar.gz
@@ -35,8 +18,6 @@
 # 1. All decision variables are binary.
 # 2. Only one position may be active per stage.
 # 3. Dynamic flow - Only nodes in "adjacent" positions may be traveled to from the previous stage.
-
-# This depends on the GNU Linear Programming Kit. I've given instructions on how to download, configure, and build the native extensions below.
 
 # Implementation
 @stages = [*0..14]
@@ -154,8 +135,24 @@ p "Path"
 end
 p "Total Cost: #{@sum}"
 
-# TO DO:
-# Print Solution
+# Solution
+# [Stage, Position]: Cost
+# [0, 0]: 75
+# [1, 1]: 64
+# [2, 2]: 82
+# [3, 2]: 87
+# [4, 2]: 82
+# [5, 3]: 75
+# [6, 3]: 73
+# [7, 3]: 28
+# [8, 4]: 83
+# [9, 5]: 32
+# [10, 6]: 91
+# [11, 7]: 78
+# [12, 8]: 58
+# [13, 8]: 73
+# [14, 9]: 93
+# Total Cost for Optimal Path: 1074
 
 # Notes:
 # To save on computation time, the first node may be omitted from the optimization, because it will be used in every solution.
