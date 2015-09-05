@@ -33,10 +33,10 @@
 # X(s,p) := the decision to use the node at position p at stage s.
 # Constraints:
 # 1. All decision variables are binary.
-# 2. Only position may be active per stage.
+# 2. Only one position may be active per stage.
 # 3. Dynamic flow - Only nodes in "adjacent" positions may be traveled to from the previous stage.
 
-# The depends on the GNU Linear Programming Kit. I've given instructions on how to download, configure, and build the native extensions below.
+# This depends on the GNU Linear Programming Kit. I've given instructions on how to download, configure, and build the native extensions below.
 
 # Implementation
 @stages = [*0..14]
