@@ -1,7 +1,7 @@
 # This depends on the GNU Linear Programming Kit. I've given instructions on how to download, configure, and build the native extensions below.
 
 # Setup
-# wget http://ftp.gnu.org/gnu/glpk/glpk-4.44.tar.gz
+# curl -L -O http://ftp.gnu.org/gnu/glpk/glpk-4.44.tar.gz
 # tar zxf glpk-4.44.tar.gz
 # cd ./glpk-4.44
 # ./configure --enable-shared && sudo make clean && sudo make && sudo make install
